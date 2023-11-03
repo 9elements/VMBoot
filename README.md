@@ -15,8 +15,6 @@ It utilizes [gokvm](https://github.com/bobuhiro11/gokvm), a small Linux-KVM Hype
  - no further device pass-through implemented
  - experimental state to show that it is possible to start a vm from u-root and execute EDK2 in the VM.
 
-To advance VMBoot improvements of gokvm and vmboot are required.
-
 ## Prerequisites
 ### Platform
 - Platform CPUs must support AMD-V or Intel VT-x
@@ -38,6 +36,10 @@ Vendor | Product name | coreboot support | Status |
 |Platform|
 |--------|
 | [Supermicro X11SCH-F](./platforms/supermicro/x11sch-f/linux_intel.config)|
+
+## Further work
+ - More platforms need to be testes.
+ - Extension and improvments of gokvm and vmboot is required
 
 ## Blog posts
 No blog posts yet.
