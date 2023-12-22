@@ -3,6 +3,9 @@
 VMBoot presents a conecpt of booting into (TianoCore/EDK2)[https://github.com/tianocore/edk2] firmware with only Open Source Firmware, namely [coreboot](https://www.coreboot.org/) and Linuxboot/[u-root](https://u-root.org/), on the flash chip .
 It utilizes [gokvm](https://github.com/bobuhiro11/gokvm), a small Linux-KVM Hypervisor written in pure Go, which is integrated into u-root and is able to execute an EDK2 firmware image.
 
+### Demo
+[![asciicast](https://asciinema.org/a/785rLfVhSdpnGsfY13fIJi5ke.svg)](https://asciinema.org/a/785rLfVhSdpnGsfY13fIJi5ke)
+
 ## Status gokvm
  - [gokvm](https://github.com/bobuhiro11/gokvm)
  - gokvm is able to boot into [EDK2/CloudHV](https://github.com/cloud-hypervisor/edk2/tree/ch) for [Cloud-Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) until the EFI-Shell.
@@ -11,8 +14,8 @@ It utilizes [gokvm](https://github.com/bobuhiro11/gokvm), a small Linux-KVM Hype
 ## Status vmbootloader in u-root
  - [vmboot](https://github.com/u-root/u-root/tree/main/cmds/exp/vmboot)
  - iterates over block devices and mounts partition with EDK2 image
- - loads EDK2 image from mounted block device
- - no further device pass-through implemented
+ - loads EDK2 image from mounted block device (only XFS file system)
+ - runs EDK2 in gokvm until EFI-Shell
  - experimental state to show that it is possible to start a vm from u-root and execute EDK2 in the VM.
 
 ## Prerequisites
