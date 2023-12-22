@@ -1,6 +1,6 @@
 # VMBoot concept
 
-VMBoot presents a conecpt of booting into (TianoCore/EDK2)[https://github.com/tianocore/edk2] firmware with only Open Source Firmware, namely [coreboot](https://www.coreboot.org/) and Linuxboot/[u-root](https://u-root.org/), on the flash chip .
+VMBoot presents a conecpt of booting into [TianoCore/EDK2](https://github.com/tianocore/edk2) firmware with only Open Source Firmware, namely [coreboot](https://www.coreboot.org/) and Linuxboot/[u-root](https://u-root.org/), on the flash chip .
 It utilizes [gokvm](https://github.com/bobuhiro11/gokvm), a small Linux-KVM Hypervisor written in pure Go, which is integrated into u-root and is able to execute an EDK2 firmware image.
 
 ### Demo
