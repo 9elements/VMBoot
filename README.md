@@ -1,7 +1,7 @@
 # VMBoot concept
 
-VMBoot presents a conecpt of booting into [TianoCore/EDK2](https://github.com/tianocore/edk2) firmware with only Open Source Firmware, namely [coreboot](https://www.coreboot.org/) and Linuxboot/[u-root](https://u-root.org/), on the flash chip .
-It utilizes [gokvm](https://github.com/bobuhiro11/gokvm), a small Linux-KVM Hypervisor written in pure Go, which is integrated into u-root and is able to execute an EDK2 firmware image.
+VMBoot presents a PoC of booting into [TianoCore/EDK2](https://github.com/tianocore/edk2) firmware with only Open Source Firmware, namely [coreboot](https://www.coreboot.org/) and Linuxboot/[u-root](https://u-root.org/), on the flash chip .
+It utilizes [gokvm](https://github.com/bobuhiro11/gokvm), a small Linux-KVM Hypervisor written in pure Go, which is integrated into u-root as VMBoot and it's able to execute an EDK2 firmware image.
 
 ### Demo
 [![asciicast](https://asciinema.org/a/785rLfVhSdpnGsfY13fIJi5ke.svg)](https://asciinema.org/a/785rLfVhSdpnGsfY13fIJi5ke)
@@ -39,6 +39,15 @@ Vendor | Product name | coreboot support | Status |
 |Platform|
 |--------|
 | [Supermicro X11SCH-F](./platforms/supermicro/x11sch-f/linux_intel.config)|
+
+## Procedure
+- build linux kernel with example config
+- build u-root initrd with vmboot
+- build coreboot for desired platform and use linux kernel and u-root initrd as payload
+- flash coreboot image on device
+- place EDK2/CloudHv image on block device attached to machine (XFS filesystem on block device required)
+- boot machine and execute vmboot
+- EDK2 is loaded by VMBoot and executed until EFI-Shell
 
 ## Further work
  - More platforms need to be testes.
