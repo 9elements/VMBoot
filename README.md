@@ -56,6 +56,22 @@ Vendor | Product name | coreboot support | Status |
 ## Blog posts
 No blog posts yet.
 
+## _References_:
+
+- [Interview with Ron Minich](https://archive.fosdem.org/2007/interview/ronald+g+minnich.html)
+- [UEFI Spec 2.10](https://uefi.org/sites/default/files/resources/UEFI_Spec_2_10_Aug29.pdf)
+- [ACPI Spec 6.5](https://uefi.org/sites/default/files/resources/ACPI_Spec_6_5_Aug29.pdf)
+- [gokvm](https://github.com/bobuhiro11/gokvm)
+- [u-root](https://github.com/u-root/u-root)
+- [u-root/vmboot](https://github.com/u-root/u-root/tree/main/cmds/exp/vmboot)
+- [coreboot](https://www.coreboot.org/)
+- [HMV direct boot ABI](https://github.com/mirage/xen/blob/master/docs/misc/hvmlite.markdown)
+- [HMV Structures](https://github.com/torvalds/linux/blob/master/include/xen/interface/hvm/start_info.h)
+- [PVH Boot Protocol](https://github.com/mirage/xen/blob/master/docs/misc/pvh.markdown)
+- [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor)
+- [EDK2/CloudHV](https://github.com/cloud-hypervisor/edk2/tree/ch)
+
+
 ## Funding
 
 This project is funded through the [NGI Assure Fund](https://nlnet.nl/assure), a fund established by [NLnet](https://nlnet.nl) with financial support from the European Commission's [Next Generation Internet](https://ngi.eu) program. Learn more at the [NLnet project page](https://nlnet.nl/project/UEFI-isolation).
