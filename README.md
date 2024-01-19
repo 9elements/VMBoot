@@ -55,7 +55,7 @@ Vendor | Product name | coreboot support | Status |
  - Extension and improvments of gokvm and vmboot is required
 
 ## Blog posts
-No blog posts yet.
+- [VMBoot Proof of Concept](https://9esec.io/blog/vmboot-poc/)
 
 ## _References_:
 
