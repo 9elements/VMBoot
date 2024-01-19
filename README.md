@@ -48,7 +48,6 @@ Vendor | Product name | coreboot support | Status |
 - flash coreboot image on device
 - place EDK2/CloudHv image on block device attached to machine (XFS filesystem on block device required)
 - boot machine and execute vmboot
-- EDK2 is loaded by VMBoot and executed until EFI-Shell
 
 ## Further work
  - More platforms need to be testes.
