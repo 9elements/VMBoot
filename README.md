@@ -12,7 +12,7 @@ For loading the firmware and basic setup of the virtual machine, the [PVH Boot P
  - gokvm is able to boot into [EDK2/CloudHV](https://github.com/cloud-hypervisor/edk2/tree/ch) for [Cloud-Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) until the EFI-Shell.
  - device passthrough via VirtIO is limited to block devices and network
 
-## Status vmbootloader in u-root
+## Status vmboot in u-root
  - [vmboot](https://github.com/u-root/u-root/tree/main/cmds/exp/vmboot)
  - iterates over block devices and mounts partition with EDK2 image
  - loads EDK2 image from mounted block device (only XFS file system)
